@@ -1,0 +1,67 @@
+.waiter {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 200px;
+    margin: 5px 20px;
+    padding: 10px;
+    background-color: cornsilk;
+    border: 1px solid #333;
+    box-shadow: 0 2px 3px #333;
+    cursor: pointer;
+    position: relative;
+}
+.waiter_name {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: orangered;
+    text-shadow: 0 1px 1px #015;
+    text-align: center;
+}
+.waiter_salary {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.salary {
+    font-size: 24px;
+    color: #00f;
+    font-weight: bold;
+}
+.waiter_startDate {
+    font-size: 24px;
+    color: #00f;
+}
+.date_start_desc {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #000;
+    text-shadow: none;
+}
+.waiter_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 10;
+    top: 55px;
+    left: 115px;
+    width: 130px;
+    height: 100px;
+    padding: 5px 0;
+    border: 1px solid#333333;
+    background-color: #fff;
+}
+.waiter_edit, .waiter_del {
+    border-bottom: 1px solid #555;
+    padding: 5px;
+    text-align: center;
+}
+.waiter_del:hover {
+    color: red;
+}
+.waiter_edit:hover {
+    color: green;
+}

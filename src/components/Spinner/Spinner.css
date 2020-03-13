@@ -1,0 +1,94 @@
+@keyframes lds-double-ring {
+    0% { transform: rotate(0) }
+    100% { transform: rotate(360deg) }
+}
+.lds-double-ring div { box-sizing: border-box!important }
+.lds-double-ring > div {
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    top: 15.5px;
+    left: 15.5px;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: orangered transparent orangered transparent;
+    animation: lds-double-ring 1.8181818181818181s linear infinite;
+}
+
+.lds-double-ring > div:nth-child(2), .lds-double-ring > div:nth-child(4) {
+    width: 57px;
+    height: 57px;
+    top: 21.5px;
+    left: 21.5px;
+    animation: lds-double-ring 1.8181818181818181s linear infinite reverse;
+}
+.lds-double-ring > div:nth-child(2) {
+    border-color: transparent orange transparent orange;
+}
+.lds-double-ring > div:nth-child(3) { border-color: transparent }
+.lds-double-ring > div:nth-child(3) div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+.lds-double-ring > div:nth-child(3) div:before, .lds-double-ring > div:nth-child(3) div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -5px;
+    left: 27px;
+    background: orangered;
+    border-radius: 50%;
+    box-shadow: 0 64px 0 0 orangered;
+}
+.lds-double-ring > div:nth-child(3) div:after {
+    left: -5px;
+    top: 27px;
+    box-shadow: 64px 0 0 0 orangered;
+}
+
+.lds-double-ring > div:nth-child(4) { border-color: transparent; }
+.lds-double-ring > div:nth-child(4) div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+.lds-double-ring > div:nth-child(4) div:before, .lds-double-ring > div:nth-child(4) div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -5px;
+    left: 21px;
+    background: orange;
+    border-radius: 50%;
+    box-shadow: 0 52px 0 0 orange;
+}
+.lds-double-ring > div:nth-child(4) div:after {
+    left: -5px;
+    top: 21px;
+    box-shadow: 52px 0 0 0 orange;
+}
+.lds-css {
+    width: 100px;
+    height: 150px;
+    margin:  auto;
+    padding-top: 15px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+}
+.lds-double-ring {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+}
+.lds-double-ring div { box-sizing: content-box; }

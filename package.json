@@ -1,0 +1,40 @@
+{
+  "name": "restaurant-management",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Restaurant management",
+  "main": "index.js",
+  "author": "Gudov Oleg",
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/Ragnar10/"
+  },
+  "scripts": {
+    "start": "set PORT=7777 &&  react-scripts start",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

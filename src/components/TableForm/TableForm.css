@@ -1,0 +1,28 @@
+.table_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    width: 25%;
+    min-height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 2px #333;
+}
+.table_label {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.table_input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+}
+.table_error {
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #f00;
+    margin-bottom: 10px;
+}
