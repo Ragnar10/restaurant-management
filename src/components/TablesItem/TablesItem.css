@@ -10,7 +10,6 @@
     border-radius: 110px;
     background-color: chocolate;
     box-shadow: 0 2px 3px #333;
-    cursor: pointer;
 }
 .table_name {
     border-bottom: 1px solid #fff;
@@ -51,6 +50,7 @@
     border-bottom: 1px solid #555;
     padding: 5px;
     text-align: center;
+    cursor: pointer;
 }
 .table_del:hover {
     color: red;
