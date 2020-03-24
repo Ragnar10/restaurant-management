@@ -1,0 +1,116 @@
+.check {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    min-height: 200px;
+    margin: 5px 10px;
+    padding: 10px;
+    background-color: beige;
+    border: 1px solid #333;
+    box-shadow: 0 2px 3px #333;
+}
+.check_id {
+    border-bottom: 1px solid #777;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+.check_item_name {
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.check_name {
+    font-size: 20px;
+    color: orangered;
+    text-shadow: 0 1px 1px #111;
+    position: absolute;
+    right: 5px;
+}
+.check_dishes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.check_dishes_caption {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #777;
+}
+.check_dishes_item {
+    display: flex;
+    color: #333;
+    margin-bottom: 5px;
+}
+.check_dish_name {
+    width: 70%;
+}
+.check_dish_multiplier {
+    width: 10%;
+    color: #333333;
+
+}
+.check_dish_price {
+    width: 20%;
+    color: blue;
+}
+.check_buttons {
+    display: flex;
+    flex-direction: column;
+}
+.tips_wrapper {
+    align-self: center;
+    display: flex;
+    align-items: baseline;
+}
+.tips_wrapper label {
+     margin-right: 10px;
+}
+.tips_wrapper input {
+}
+.add_dish, .close_dish {
+    width: 150px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px #333;
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+    background-color: red;
+    align-self: center;
+    cursor: pointer;
+}
+.add_dish {
+    width: 30px;
+    padding: 5px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bolder;
+    background-color: springgreen;
+    align-self: flex-end;
+    border-radius: 15px;
+}
+.closed_dish {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333333;
+    font-size: 20px;
+    color: #111;
+    align-self: center;
+    cursor: pointer
+}
+.check_total {
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #777;
+    text-align: right;
+    font-size: 24px;
+}
+.check_tips {
+    align-self: flex-end;
+    font-size: 18px;
+}

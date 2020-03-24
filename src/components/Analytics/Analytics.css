@@ -1,0 +1,22 @@
+.analytics_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.analytics_caption {
+    display: inline-block;
+    font-size: 26px;
+    margin-left: 400px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+.analytics_am {
+    font-size: 24px;
+    margin-left: 50px;
+}
+.error_message {
+    font-size: 24px;
+    color: red;
+    text-shadow: 0 1px 1px black;
+}

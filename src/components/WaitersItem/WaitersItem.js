@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {transformDateAfterForm} from "../../utils/transformDate";
 
 import './WaitersItem.css';
+import {Link} from "react-router-dom";
 
 const WaitersItem = ({waiter, deleteWaiter, editWaiter}) => {
 
@@ -26,6 +27,7 @@ const WaitersItem = ({waiter, deleteWaiter, editWaiter}) => {
         <div className='waiter' onContextMenu={onShowMenu} onClick={() => setShowMenu(false)} title='Есть контекстное меню'>
             { showMenu ?
                 <div className='waiter_menu'>
+                    <Link to={`analytics/waiter${waiter.id}`} className='table_analytics'>Статистика</Link>
                     <div className='waiter_edit' onClick={() => onEditWaiter(waiter.id)}>Редактировать</div>
                     <div className='waiter_del' onClick={() => onDeleteWaiter(waiter.id)}>Удалить</div>
                 </div>: null

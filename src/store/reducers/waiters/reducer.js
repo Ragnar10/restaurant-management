@@ -9,7 +9,6 @@ const initialState = {
 };
 
 const waitersReducer = (state = initialState, action) => {
-    console.log(action.payload);
     switch (action.type) {
         case SET_LOADING_ACTION:
             return {

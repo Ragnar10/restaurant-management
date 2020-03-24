@@ -21,7 +21,7 @@ const Tables = ({match, history, tables, search, loading, getTables, deleteTable
     };
 
     return (
-        <div className='tables_wrap'>
+        <div className='tables_wrapper'>
             <Switch>
                 <Route path={`${match.path}`} exact>
                     {

@@ -1,0 +1,10 @@
+.checks_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.check_search {
+    padding: 5px;
+    font-size: 20px;
+    margin: 10px 0;
+}

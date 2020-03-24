@@ -1,0 +1,10 @@
+.dishes_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dish_search {
+    padding: 5px;
+    font-size: 20px;
+    margin: 10px 0;
+}

@@ -21,7 +21,7 @@ const Waiters = ({match, history, waiters, search, loading, getWaiters, deleteWa
     };
 
     return (
-        <div className='waiters_wrap'>
+        <div className='waiters_wrapper'>
             <Switch>
                 <Route path={`${match.path}`} exact>
                     {

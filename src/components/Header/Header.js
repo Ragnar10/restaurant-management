@@ -13,6 +13,9 @@ const Header = () => {
             <div className='header'>
                 <NavLink to='/tables' activeClassName='active' className='link'>Tables</NavLink>
                 <NavLink to='/waiters' activeClassName='active' className='link'>Waiters</NavLink>
+                <NavLink to='/dishes' activeClassName='active' className='link'>Dishes</NavLink>
+                <NavLink to='/checks' activeClassName='active' className='link'>Checks</NavLink>
+                <NavLink to='/analytics' activeClassName='active' className='link'>Analytics</NavLink>
             </div>
         </>
     );

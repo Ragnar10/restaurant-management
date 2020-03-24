@@ -1,0 +1,56 @@
+.dish_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    width: 40%;
+    min-height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 2px #333;
+}
+.dish_select_wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.dish_select {
+    width: 40%;
+    height: 80px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    overflow: auto;
+}
+.dish_ingredient {
+    width: 60%;
+    cursor: default;
+}
+.dish_ingredient_select:hover {
+    cursor: pointer;
+    text-shadow: 0 1px 2px #333;
+}
+.del_ingredient {
+    cursor: pointer;
+    margin-left: 20px;
+    color: red;
+}
+.dish_label {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.dish_input {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+}
+.dish_error {
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #f00;
+    margin-bottom: 10px;
+}

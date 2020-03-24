@@ -1,0 +1,57 @@
+.check_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    width: 60%;
+    min-height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 2px #333;
+}
+.check_label {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.selected_item {
+    display: inline-block;
+    color: #555555;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.check_select_wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.check_select {
+    width: 40%;
+    height: 80px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    overflow: auto;
+}
+.check_waiter_width {
+    width: 80%;
+}
+.check_tableId, .check_waiterId, .check_dish_item, .check_dishId {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #333;
+}
+.check_dishId:hover {
+    color: green;
+}
+.check_dish_item:hover {
+    color: red;
+}
+.check_error {
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #f00;
+    margin-bottom: 10px;
+}

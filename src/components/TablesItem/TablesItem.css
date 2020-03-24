@@ -46,15 +46,20 @@
     border: 1px solid#333333;
     background-color: #fff;
 }
-.table_edit, .table_del {
+.table_edit, .table_del, .table_analytics {
     border-bottom: 1px solid #555;
     padding: 5px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
 }
 .table_del:hover {
     color: red;
 }
 .table_edit:hover {
     color: green;
+}
+.table_analytics:hover {
+    color: #777777;
 }

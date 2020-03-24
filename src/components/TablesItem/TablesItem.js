@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 import './TablesItem.css';
+import {Link} from "react-router-dom";
 
 const TablesItem = ({table, deleteTable, editTable}) => {
 
@@ -25,6 +26,7 @@ const TablesItem = ({table, deleteTable, editTable}) => {
         <div className='table' onContextMenu={onShowMenu} onClick={() => setShowMenu(false)} title='Есть контекстное меню'>
             { showMenu ?
                 <div className='table_menu'>
+                    <Link to={`analytics/table${table.id}`} className='table_analytics'>Статистика</Link>
                     <div className='table_edit' onClick={() => onEditTable(table.id)}>Редактировать</div>
                     <div className='table_del' onClick={() => onDeleteTable(table.id)}>Удалить</div>
                 </div>: null
