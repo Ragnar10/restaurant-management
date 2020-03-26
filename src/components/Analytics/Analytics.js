@@ -7,13 +7,7 @@ import Spinner from "../Spinner/Spinner";
 
 import './Analytics.css';
 
-
-
-
-
-
-const Analytics = ({match ,checks, loading, getChecks}) => {
-
+const Analytics = ({match, checks, loading, getChecks}) => {
     useEffect(() => {
         getChecks();
     },[]);
@@ -49,7 +43,7 @@ const Analytics = ({match ,checks, loading, getChecks}) => {
 
     if (match.params.id === undefined ||
         !match.params.id.includes('table') &&
-        !match.params.id.includes('waiter') &&
+        !match.params.id.includes('waiter') ||
         checks.findIndex(item =>  item.tableId.id === match.params.id.slice(5) || item.waiterId.id === match.params.id.slice(6)) === -1) {
         return (
             <Route>

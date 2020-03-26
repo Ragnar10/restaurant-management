@@ -71,7 +71,7 @@ const TableForm = ({table, tables, history, match, saveTable}) => {
                         <span className="table_error">
                             <ErrorMessage name="seatsCount" />
                         </span>
-                        <button type='submit' className='save_btn'>Save</button>
+                        <button type='submit' className='save_btn btn-width'>Save</button>
                     </Form>
                 )
             }
