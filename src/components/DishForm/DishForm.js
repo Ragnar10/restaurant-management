@@ -45,7 +45,7 @@ const DishForm = ({dish, dishes, history, match, saveDish}) => {
     if (id === -1 && match.params.id !== 'new') {
         return (
             <Route>
-                <Redirect to='/tables'/>
+                <Redirect to='/dishes'/>
             </Route>
         );
     }

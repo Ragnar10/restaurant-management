@@ -67,7 +67,7 @@ const CheckForm = ({check, checks, tables, waiters, dishes, history, match, save
     if (id === -1 && match.params.id !== 'new') {
         return (
             <Route>
-                <Redirect to='/tables'/>
+                <Redirect to='/checks'/>
             </Route>
         );
     }
