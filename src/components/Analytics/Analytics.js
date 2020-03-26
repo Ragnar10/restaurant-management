@@ -44,7 +44,8 @@ const Analytics = ({match, checks, loading, getChecks}) => {
     if (match.params.id === undefined ||
         !match.params.id.includes('table') &&
         !match.params.id.includes('waiter') ||
-        checks.findIndex(item =>  item.tableId.id === match.params.id.slice(5) || item.waiterId.id === match.params.id.slice(6)) === -1) {
+        checks.findIndex(item =>  item.tableId.id === match.params.id.slice(5)) === -1 ||
+        checks.findIndex(item =>  item.waiterId.id === match.params.id.slice(6))) {
         return (
             <Route>
                 <div className='error_message'>Выберете нужного вам официанта или столик!</div>
