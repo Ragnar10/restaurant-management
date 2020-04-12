@@ -41,11 +41,19 @@ const Analytics = ({match, checks, loading, getChecks}) => {
             .reduce((sum, acc) => +sum + acc , 0) / countChecks).toFixed(2);
     };
 
-    if (match.params.id === undefined ||
+    const _findTable = (checks, match) => {
+        return checks.findIndex(item =>  item.tableId.id === match.params.id.slice(5)) === -1;
+    };
+
+    const _findWaiter = (checks, match) => {
+        return checks.findIndex(item =>  item.waiterId.id === match.params.id.slice(6))  === -1;
+    };
+
+
+    if ( match.params.id === undefined ||
         !match.params.id.includes('table') &&
         !match.params.id.includes('waiter') ||
-        checks.findIndex(item =>  item.tableId.id === match.params.id.slice(5)) === -1 ||
-        checks.findIndex(item =>  item.waiterId.id === match.params.id.slice(6))) {
+        _findTable(checks, match) && _findWaiter(checks, match) ) {
         return (
             <Route>
                 <div className='error_message'>Выберете нужного вам официанта или столик!</div>
